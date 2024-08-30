@@ -1,0 +1,364 @@
+/* Importação da Fonte */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Estilos Gerais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #e0eafc;
+  /* Fundo suave para reduzir a intensidade do gradiente */
+  background: -webkit-linear-gradient(to bottom, #d5e4c5, #b2d3ee);
+  background: linear-gradient(to bottom, #d5e4c5, #b2d3ee);
+  color: #333;
+}
+
+/* Meu CSS */
+.min-vh-100-94 {
+  min-height: calc(100vh - 94px) !important;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #007f2a;
+  /* Verde escuro mais moderno */
+  padding: 1rem;
+}
+
+.navbar-brand h1 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+/* Descrição */
+.description {
+  margin-top: 2rem;
+}
+
+.welcome-text {
+  font-size: 1.75rem;
+  color: #007bff;
+}
+
+.lead {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}
+
+.disclaimer {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.credits-info {
+  background-color: #ffc107;
+  color: #212529;
+  border-radius: 8px;
+  font-size: 1.25rem;
+  padding: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Formulário */
+.form-label {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.form-control-lg {
+  font-size: 1.5rem;
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-control-lg:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.5);
+}
+
+.vs-display {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Botões */
+.btn-primary {
+  background-color: #ffcc29;
+  border-color: #ffcc29;
+  color: #212529;
+  padding: 10px 20px;
+  font-size: 1.25rem;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary:hover {
+  background-color: #e0a800;
+  border-color: #e0a800;
+}
+
+.btn-success {
+  background-color: #009b3a;
+  border-color: #009b3a;
+  padding: 10px 20px;
+  font-size: 1.25rem;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-success:hover {
+  background-color: #007f2a;
+  border-color: #007f2a;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  padding: 10px 20px;
+  font-size: 1.25rem;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+  border-color: #545b62;
+}
+
+/* Footer */
+.footer {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+}
+
+/* Cookie Banner */
+.cookie-banner {
+  position: fixed;
+  bottom: -100px;
+  left: 0;
+  right: 0;
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  font-size: 14px;
+  z-index: 1000;
+  transition: bottom 0.5s ease-in-out;
+}
+
+.cookie-banner button {
+  background-color: #ffcc29;
+  border: none;
+  color: #333;
+  padding: 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.cookie-banner.show {
+  bottom: 0;
+}
+
+.cookie-banner.hide {
+  bottom: -100px;
+}
+
+/* Formatação da resposta do palpite */
+.match-analysis-title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #1a1a1a;
+}
+
+.match-result {
+  font-size: 22px;
+  color: #4CAF50;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.final-score {
+  font-size: 20px;
+  color: #f44336;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.summary-section {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.summary-section strong {
+  color: #000;
+  font-weight: bold;
+}
+
+/* Mensagem importante */
+.important-message {
+  background-color: #ffeb3b;
+  color: #d32f2f;
+  border: 2px solid #d32f2f;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.important-message::before {
+  content: "⚠️ ";
+  font-size: 18px;
+}
+
+/* Login e Cadastro */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #e0eafc;
+  background: -webkit-linear-gradient(to top, #c2e59c, #64b3f4);
+  background: linear-gradient(to top, #c2e59c, #64b3f4);
+}
+
+.auth-box {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.auth-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.auth-form .form-label {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.auth-form .form-control-lg {
+  font-size: 16px;
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.auth-form .form-control-lg:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.5);
+}
+
+.auth-form .btn-success {
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.auth-form .btn-success:hover {
+  background-color: #007f2a;
+  border-color: #007f2a;
+}
+
+.auth-form .text-center a {
+  color: #007bff;
+}
+
+.auth-form .text-center a:hover {
+  text-decoration: underline;
+}
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #e0eafc;
+  background: -webkit-linear-gradient(to top, #c2e59c, #64b3f4);
+  background: linear-gradient(to top, #c2e59c, #64b3f4);
+}
+
+.auth-box {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.auth-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.auth-form .form-label {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.auth-form .form-control-lg {
+  font-size: 16px;
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.auth-form .form-control-lg:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.5);
+}
+
+.auth-form .btn-success {
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.auth-form .btn-success:hover {
+  background-color: #007f2a;
+  border-color: #007f2a;
+}
+
+.auth-form .text-center a {
+  color: #007bff;
+}
+
+.auth-form .text-center a:hover {
+  text-decoration: underline;
+}
